@@ -1,0 +1,80 @@
+/* MovieDetails.css */
+
+/* Contenedor principal */
+.movie-details-container {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex; /* Cambia a un diseño de caja flexible */
+}
+
+/* Contenedor de la información */
+.movie-info-container {
+  flex: 1; /* El contenido ocupará todo el espacio disponible en el contenedor principal */
+  padding-left: 20px; /* Espaciado izquierdo para separar la información del título */
+}
+
+/* Título de la película */
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Calificación */
+.movie-rating {
+  font-size: 16px;
+}
+
+/* Sinopsis */
+.movie-overview {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Imagen de la película */
+.movie-poster {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Enlaces */
+.movie-links {
+  margin-top: 20px;
+}
+
+.movie-links a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.movie-links a:hover {
+  text-decoration: underline;
+}
+/* Estilo para el enlace "Volver atrás" como flecha */
+.back-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px; /* Agrega un espaciado a la izquierda para el ícono de flecha */
+}
+
+.back-link::before {
+  content: '\2190'; /* Código Unicode para una flecha hacia la izquierda */
+  position: absolute;
+  left: 0;
+  padding-right: 5px; /* Espaciado entre la flecha y el texto */
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
