@@ -6,6 +6,6 @@ import App from './App';
 ReactDOM.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>, // Agrega una coma aquí
+  </BrowserRouter>, 
   document.getElementById('root')
 );

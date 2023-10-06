@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import './App.css'; // Import the CSS file for styling
+import './App.css'; 
 
 const Home = React.lazy(() => import('./components/Home/Home'));
 const Movies = React.lazy(() => import('./components/Movies/Movies'));
@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/movies/:movieId" element={<MovieDetails />} />
           <Route path="/cast/:movieId" element={<Cast />} />
           <Route path="/reviews/:movieId" element={<Reviews />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/" element={<Error />} />
         </Routes>
       </Suspense>
     </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 function Reviews() {
-  const { movieId } = useParams(); // Asegúrate de que 'movieId' coincida con el parámetro en la URL
+  const { movieId } = useParams(); 
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
