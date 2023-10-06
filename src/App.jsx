@@ -14,19 +14,21 @@ const App = () => {
     <div>
       <nav>
         <Link to="/home">Home</Link>
-        <Link to="/movies">Movies</Link>
+        <Link to="/movies">Movies</Link> 
       </nav>
       
       <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/movies" element={<Movies />} />
-          <Route path="/movies/:movieId" element={<MovieDetails />} />
-          <Route path="/cast/:movieId" element={<Cast />} />
-          <Route path="/reviews/:movieId" element={<Reviews />} />
-          <Route path="/" element={<Error />} />
-        </Routes>
+       
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/movies" element={<Movies />} />
+            <Route path="/movies/:movieId" element={<MovieDetails />} />
+            <Route path="/cast/:movieId" element={<Cast />} />
+            <Route path="/reviews/:movieId" element={<Reviews />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+       
       </Suspense>
     </div>
   );
